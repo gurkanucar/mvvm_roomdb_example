@@ -2,6 +2,7 @@ package com.gusoft.mvvm_roomdb_example.db
 
 import androidx.lifecycle.LiveData
 import androidx.room.*
+import com.gusoft.mvvm_roomdb_example.db.models.Person
 
 @Dao
 interface PersonDAO {

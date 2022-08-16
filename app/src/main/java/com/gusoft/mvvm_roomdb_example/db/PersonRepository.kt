@@ -1,8 +1,11 @@
 package com.gusoft.mvvm_roomdb_example.db
 
+import androidx.lifecycle.LiveData
+import com.gusoft.mvvm_roomdb_example.db.models.Person
+
 class PersonRepository(private val dao: PersonDAO) {
 
-    val persons = dao.getAllPersons()
+    val getAllData: LiveData<List<Person>> = dao.getAllPersons()
 
 
     suspend fun insert(person: Person) {
